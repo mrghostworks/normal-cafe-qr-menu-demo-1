@@ -1,0 +1,323 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7f4ed">
+  <title>The Olive Spoon | Digital Menu</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f7f4ed;
+      color: #29382f;
+      line-height: 1.5;
+    }
+
+    header {
+      background: #263c31;
+      color: #fffaf0;
+      text-align: center;
+      padding: 35px 18px 30px;
+      border-bottom: 4px solid #c9a66b;
+    }
+
+    .eyebrow {
+      color: #e2c58e;
+      font-size: 11px;
+      letter-spacing: 4px;
+      margin-bottom: 12px;
+    }
+
+    header h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(28px, 7vw, 42px);
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      font-size: 12px;
+      letter-spacing: 2px;
+      color: #e1e7df;
+    }
+
+    .intro {
+      text-align: center;
+      padding: 24px 16px 8px;
+    }
+
+    .intro h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 23px;
+      margin-bottom: 6px;
+    }
+
+    .intro p {
+      color: #687168;
+      font-size: 14px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding: 20px 12px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #263c31;
+      background: #fff;
+      border: 1px solid #d8d8cb;
+      border-radius: 22px;
+      padding: 9px 14px;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background: #263c31;
+      color: white;
+    }
+
+    main {
+      width: 100%;
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 0 18px 30px;
+    }
+
+    .menu-section {
+      background: #fffdf8;
+      padding: 22px 18px;
+      border: 1px solid #e7e2d6;
+      border-radius: 12px;
+      margin-bottom: 18px;
+      scroll-margin-top: 12px;
+    }
+
+    .menu-section h3 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 21px;
+      color: #52694e;
+      padding-bottom: 12px;
+      margin-bottom: 4px;
+      border-bottom: 1px solid #e7e2d6;
+    }
+
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 14px 0;
+      border-bottom: 1px dashed #e4dfd3;
+    }
+
+    .menu-item:last-child {
+      border-bottom: none;
+      padding-bottom: 2px;
+    }
+
+    .item-info {
+      min-width: 0;
+    }
+
+    .item-info h4 {
+      font-size: 15px;
+      margin-bottom: 4px;
+      color: #29382f;
+    }
+
+    .item-info p {
+      font-size: 12px;
+      color: #77796f;
+    }
+
+    .price {
+      white-space: nowrap;
+      font-weight: bold;
+      color: #94683a;
+      font-size: 15px;
+    }
+
+    footer {
+      background: #263c31;
+      color: #f7f4ed;
+      text-align: center;
+      padding: 25px 15px;
+      font-size: 13px;
+    }
+
+    footer p + p {
+      margin-top: 6px;
+      color: #d5ddcf;
+      font-size: 11px;
+    }
+
+    @media (max-width: 380px) {
+      .menu-section {
+        padding: 18px 13px;
+      }
+
+      nav a {
+        padding: 8px 11px;
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="eyebrow">WELCOME TO</div>
+    <h1>The Olive Spoon</h1>
+    <p>CAFÉ · KITCHEN · GOOD COMPANY</p>
+  </header>
+
+  <section class="intro">
+    <h2>Our Menu</h2>
+    <p>Freshly prepared, simply served.</p>
+  </section>
+
+  <nav aria-label="Menu categories">
+    <a href="#hot-drinks">Hot Drinks</a>
+    <a href="#cold-drinks">Cold Drinks</a>
+    <a href="#quick-bites">Quick Bites</a>
+    <a href="#desserts">Desserts</a>
+  </nav>
+
+  <main>
+
+    <section class="menu-section" id="hot-drinks">
+      <h3>☕ Hot Drinks</h3>
+
+      <div class="menu-item">
+        <div class="item-info">
+          <h4>Masala Chai</h4>
+          <p>Indian tea brewed with aromatic spices.</p>
+        </div>
+        <span class="price">₹60</span>
+      </div>
+
+      <div class="menu-item">
+        <div class="item-info">
+          <h4>Cappuccino</h4>
+          <p>Espresso topped with steamed milk foam.</p>
+        </div>
+        <span class="price">₹140</span>
+      </div>
+
+      <div class="menu-item">
+        <div class="item-info">
+          <h4>Filter Coffee</h4>
+          <p>Rich and aromatic South Indian coffee.</p>
+        </div>
+        <span class="price">₹100</span>
+      </div>
+
+      <div class="menu-item">
+        <div class="item-info">
+          <h4>Hot Chocolate</h4>
+          <p>A comforting chocolate drink.</p>
+        </div>
+        <span class="price">₹150</span>
+      </div>
+    </section>
+
+    <section class="menu-section" id="cold-drinks">
+      <h3>🥤 Cold Drinks</h3>
+
+      <div class="menu-item">
+        <div class="item-info">
+          <h4>Fresh Lime Soda</h4>
+          <p>Fresh lime with a refreshing soda fizz.</p>
+        </div>
+        <span class="price">₹100</span>
+      </div>
+
+      <div class="menu-item">
+        <div class="item-info">
+          <h4>Cold Coffee</h4>
+          <p>Chilled coffee blended with milk.</p>
+        </div>
+        <span class="price">₹160</span>
+      </div>
+
+      <div class="menu-item">
+        <div class="item-info">
+          <h4>Mango Cooler</h4>
+          <p>A refreshing mango drink served cold.</p>
+        </div>
+        <span class="price">₹140</span>
+      </div>
+    </section>
+
+    <section class="menu-section" id="quick-bites">
+      <h3>🥪 Quick Bites</h3>
+
+      <div class="menu-item">
+        <div class="item-info">
+          <h4>Veg Grilled Sandwich</h4>
+          <p>Toasted bread with seasonal vegetables.</p>
+        </div>
+        <span class="price">₹180</span>
+      </div>
+
+      <div class="menu-item">
+        <div class="item-info">
+          <h4>Paneer Tikka Wrap</h4>
+          <p>Spiced paneer wrapped with fresh salad.</p>
+        </div>
+        <span class="price">₹220</span>
+      </div>
+
+      <div class="menu-item">
+        <div class="item-info">
+          <h4>Classic Fries</h4>
+          <p>Crispy golden fries with house seasoning.</p>
+        </div>
+        <span class="price">₹120</span>
+      </div>
+    </section>
+
+    <section class="menu-section" id="desserts">
+      <h3>🍰 Desserts</h3>
+
+      <div class="menu-item">
+        <div class="item-info">
+          <h4>Chocolate Brownie</h4>
+          <p>A rich and fudgy chocolate treat.</p>
+        </div>
+        <span class="price">₹160</span>
+      </div>
+
+      <div class="menu-item">
+        <div class="item-info">
+          <h4>Cheesecake Slice</h4>
+          <p>A smooth and creamy dessert.</p>
+        </div>
+        <span class="price">₹220</span>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Thank you for visiting The Olive Spoon!</p>
+    <p>Fictional sample menu · Demo by MRGhost Works</p>
+    <p>Sample prices only — not a real restaurant.</p>
+  </footer>
+
+</body>
+</html>
